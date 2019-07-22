@@ -55,10 +55,16 @@ under the License.
     <url>https://builds.apache.org/job/maven-box/job/maven-dependency-plugin/</url>
   </ciManagement>
   <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scm:svn:https://svn.apache.org/repos/asf/maven/website/components/${maven.site.path}</url>
-    </site>
+    <repository>
+        <id>evolveum-nexus</id>
+        <name>Internal Releases</name>
+        <url>http://nexus.evolveum.com/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>evolveum-nexus</id>
+        <name>Internal Snapshots</name>
+        <url>http://nexus.evolveum.com/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <contributors>
